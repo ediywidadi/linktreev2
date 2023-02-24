@@ -13,10 +13,6 @@ a {
    text-decoration: none;
 }
 
-a:focus {
-   outline: none;
-}
-
 h1 {
    font-size: 25px;
 }
@@ -25,7 +21,6 @@ h2 {
    font-size: 20px;
    color: #fff;
    margin: 0;
-   
 }
 
 h1 .bi {
@@ -44,27 +39,25 @@ h1 .bi {
 .linktree img {
    width: 150px;
    height: 100%;
-   border-radius: 50%;
-   border: 6px solid silver;
-   box-shadow: 0px 2px 15px 14px rgba(0, 0, 0, 0.2);
 }
 
-.linktree-about span a{
+.linktree-about span a {
    color: #fff;
    font-size: 2em;
    padding: 5px;
    margin: 10px;
-  
 }
 
-.linktree-about span a:focus{
-   outline:none;
+.linktree-about span a:hover {
+   color: #ded2ca;
+   transition: color 0.6s easen;
 }
+
 
 .share-linktree {
    position: absolute;
    right: 0;
-   top:0;
+   top: 0;
    margin: 2em;
 }
 
@@ -80,8 +73,8 @@ h1 .bi {
 }
 
 .linktree-item ul {
-   padding:0;
-   list-style-type:none;
+   padding: 0;
+   list-style-type: none;
 }
 
 .linktree-item ul a {
@@ -97,7 +90,24 @@ h1 .bi {
 }
 
 .linktree-item ul a:hover {
+   background: #ded2ca;
+   transition: background 0.6s ease;
    animation: bounce 0.6s linear;
+}
+
+#container {
+   height: 100%;
+   padding-top: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.linktree-about {
+   margin-bottom: 1em;
+   padding: 10px;
+   color: #fff;
+   border-bottom: 2px dotted #ab9f97;
 }
 
 @keyframes bounce {
@@ -121,21 +131,3 @@ h1 .bi {
       transform: translateY(0);
    }
 }
-
-#container {
-   height: 100%;
-   padding-top: 5rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-
-.linktree-about {
-   margin-bottom:1em;
-   padding: 10px;
-   color:#fff;
-   border-bottom: 2px dotted #ab9f97;
-}
-
-
