@@ -13,10 +13,6 @@ a {
    text-decoration: none;
 }
 
-h1 {
-   font-size: 25px;
-}
-
 h2 {
    font-size: 20px;
    color: #fff;
@@ -25,7 +21,15 @@ h2 {
 
 h1 .bi {
    font-size: 20px;
-   color: #4D455D;
+   color: #551e3d;
+}
+
+#container {
+   height: 100%;
+   padding-top: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .linktree {
@@ -44,13 +48,12 @@ h1 .bi {
 .linktree-about span a {
    color: #fff;
    font-size: 2em;
-   padding: 5px;
    margin: 10px;
 }
 
 .linktree-about span a:hover {
-   color: #ded2ca;
-   transition: color 0.6s easen;
+   color: #6b635e;
+   transition: color 0.6s ease;
 }
 
 
@@ -64,6 +67,11 @@ h1 .bi {
 .share-linktree a {
    color: #fff;
    font-size: 20px;
+}
+
+.share-linktree a:hover{
+   color: #6b635e;
+   transition: color 0.6s ease;
 }
 
 .linktree-item {
@@ -80,27 +88,18 @@ h1 .bi {
 .linktree-item ul a {
    background: #6b635e;
    color: white;
-   font-weight: bold;
    padding: 15px;
    display: block;
    margin-bottom: 1rem;
-   font-size: 18px;
-   border: 2px solid #fff;
+   border: 3px solid #fff;
    border-radius: 50px;
 }
 
 .linktree-item ul a:hover {
    background: #ded2ca;
+   color: #6b635e;
    transition: background 0.6s ease;
    animation: bounce 0.6s linear;
-}
-
-#container {
-   height: 100%;
-   padding-top: 5rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
 .linktree-about {
